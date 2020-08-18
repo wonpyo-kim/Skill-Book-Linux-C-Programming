@@ -1,1 +1,2 @@
-This repository is source code warehouse for reader with "skill book : linux c programming"
+This repository is source code warehouse for reader of "skill book : linux c programming".
+
