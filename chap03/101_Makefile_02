@@ -1,0 +1,17 @@
+
+CC = gcc
+CFLAGS = -g -c
+OBJECTS = 101_main.o 101.o
+SRCS = 101_main.c 101.c
+TARGET = 101
+
+$(TARGET) : $(OBJECTS)
+	$(CC) -o $(TARGET) $(OBJECTS)
+
+clean :
+	rm -rf $(OBJECTS) $(TARGET)
+
+101_main.o : 101_main.c
+101.o : 101.h 101.c
+
+

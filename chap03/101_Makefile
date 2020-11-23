@@ -1,0 +1,16 @@
+
+OBJS = 101_main.o 101.o
+
+101 : $(OBJS)
+	gcc -o 101 $(OBJS)
+
+101_main.o : 101_main.c
+	gcc -c 101_main.c
+
+101.o : 101.c
+	gcc -c 101.c
+
+clean :
+	rm $(OBJS)
+
+
